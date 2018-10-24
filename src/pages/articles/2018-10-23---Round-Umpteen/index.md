@@ -3,7 +3,7 @@ title: Round Umpteen
 date: "2018-10-23T16:51:00.000Z"
 layout: post
 draft: false
-path: "/posts/round-umpteed"
+path: "/posts/round-umpteen"
 category: "Site"
 tags:
     - "Site"
