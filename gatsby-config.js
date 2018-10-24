@@ -3,11 +3,11 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
+    url: 'https://austinlanari.netlify.com',
+    title: 'su - foggy',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+      "Build it up; Tear it down",
+    copyright: '© 2018 Austin Lanari, This Means Nothing',
     disqusShortname: '',
     menu: [
       {
@@ -24,13 +24,10 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      name: 'Austin Lanari',
+      email: 'austin@jumanji.io',
+      github: 'foggy1',
+      rss: '/rss.xml',
     },
   },
   plugins: [
@@ -119,10 +116,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

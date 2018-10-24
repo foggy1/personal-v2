@@ -1,7 +1,7 @@
 {
-  "version": "3.0.0",
-  "name": "gatsby-v2-starter-lumen",
-  "description": "Simple starter for Gatsby",
+  "version": "0.0.1",
+  "name": "personal-v2",
+  "description": "Austin Lanari's Homepage",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
@@ -21,7 +21,7 @@
     "theme",
     "starter"
   ],
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "author": "Austin Lanari <austin@jumanji.io>",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
