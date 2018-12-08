@@ -7,7 +7,7 @@ module.exports = {
     title: 'su - foggy',
     subtitle:
       "Build it up; Tear it down",
-    copyright: '© 2018 Austin Lanari, This Means Nothing',
+    copyright: '© 2018 Austin Lanari',
     disqusShortname: '',
     menu: [
       {
@@ -194,5 +194,13 @@ module.exports = {
         precision: 8,
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '2',
+        matomoUrl: process.env.MATOMO_URL,
+        siteUrl: 'https://austinlanari.com'
+      }
+    }
   ],
 }
