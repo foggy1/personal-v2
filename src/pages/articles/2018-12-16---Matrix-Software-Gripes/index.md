@@ -9,7 +9,7 @@ tags:
     - "Software gripes"
     - "Matrix"
     - "Chat protocol"
-description: ""
+description: "Granular room-and-device-based encryption is neat, but Matrix suffers from clunky back-end implementations."
 ---
 
 ## Why I Tried Synapse
