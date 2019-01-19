@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
-import Disqus from '../Disqus/Disqus'
 import HomeButton from '../HomeButton'
 import './style.scss'
 
@@ -34,15 +33,6 @@ class PostTemplateDetails extends React.Component {
       </div>
     )
 
-    const commentsBlock = (
-      <div>
-        <Disqus
-          postNode={post}
-          siteMetadata={this.props.data.site.siteMetadata}
-        />
-      </div>
-    )
-
     return (
       <div>
         <HomeButton />
@@ -61,11 +51,6 @@ class PostTemplateDetails extends React.Component {
             />
           <div className="post-single__footer">
             {tagsBlock}
-            <hr />
-            <p className="post-single__footer-text">
-              {subtitle}
-            </p>
-            {commentsBlock}
           </div>
         </div>
       </div>

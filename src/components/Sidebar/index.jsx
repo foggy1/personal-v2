@@ -64,4 +64,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebarf
+export default Sidebar
