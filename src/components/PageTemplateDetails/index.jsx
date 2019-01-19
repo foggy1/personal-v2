@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
+import HomeButton from '../HomeButton'
 import './style.scss'
 
 class PageTemplateDetails extends React.Component {
@@ -11,6 +11,7 @@ class PageTemplateDetails extends React.Component {
         <div className="content">
           <div className="content__inner">
             <div className="page">
+              <HomeButton />
               <h1 className="page__title">{page.frontmatter.title}</h1>
               <div
                 className="page__body"

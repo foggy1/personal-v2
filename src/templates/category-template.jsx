@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import HomeButton from '../components/HomeButton'
 import CategoryTemplateDetails from '../components/CategoryTemplateDetails'
 
 class CategoryTemplate extends React.Component {
@@ -14,6 +15,7 @@ class CategoryTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet title={`${category} - ${title}`} />
+          <HomeButton />
           <CategoryTemplateDetails {...this.props} />
         </div>
       </Layout>

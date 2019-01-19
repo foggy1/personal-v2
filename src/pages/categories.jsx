@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import kebabCase from 'lodash/kebabCase'
-
+import HomeButton from '../components/HomeButton'
 class CategoriesRoute extends React.Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
@@ -16,6 +16,7 @@ class CategoriesRoute extends React.Component {
           <div className="content">
             <div className="content__inner">
               <div className="page">
+                <HomeButton />
                 <h1 className="page__title">Categories</h1>
                 <div className="page__body">
                   <div className="categories">

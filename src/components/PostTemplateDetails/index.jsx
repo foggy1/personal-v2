@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import Disqus from '../Disqus/Disqus'
+import HomeButton from '../HomeButton'
 import './style.scss'
 
 class PostTemplateDetails extends React.Component {
@@ -44,7 +45,7 @@ class PostTemplateDetails extends React.Component {
 
     return (
       <div>
-        {homeBlock}
+        <HomeButton />
         <div className="post-single">
           <div className="post-single__inner">
             <h1 className="post-single__title">{post.frontmatter.title}</h1>
