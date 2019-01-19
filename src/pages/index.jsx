@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
-
+// import Header from '../components/Header'
 class IndexRoute extends React.Component {
   render() {
     const items = []
@@ -21,7 +21,6 @@ class IndexRoute extends React.Component {
             <title>{title}</title>
             <meta name="description" content={subtitle} />
           </Helmet>
-          <Sidebar {...this.props} />
           <div className="content">
             <div className="content__inner">{items}</div>
           </div>

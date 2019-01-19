@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from '../Post'
-
+import HomeButton from '../HomeButton'
 class TagTemplateDetails extends React.Component {
   render() {
     const items = []
@@ -14,6 +14,7 @@ class TagTemplateDetails extends React.Component {
       <div className="content">
         <div className="content__inner">
           <div className="page">
+            <HomeButton />
             <h1 className="page__title">
               All Posts tagged as &quot;
               {tagTitle}
