@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Header from '../Header'
 import '../../assets/scss/init.scss'
 
 class Layout extends React.Component {
@@ -8,6 +9,7 @@ class Layout extends React.Component {
 
     return (
       <div className="layout">
+        <Header />
         <Helmet defaultTitle="Austin Lanari" />
         {children}
       </div>

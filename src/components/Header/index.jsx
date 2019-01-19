@@ -4,7 +4,7 @@ class Header extends Component {
   render () {
     return (
       <header>
-        <h1>Austin Lanari</h1>
+        <h1 style={{marginTop: 56, fontSize: 64}}>Austin Lanari</h1>
       </header>
     )
   }
