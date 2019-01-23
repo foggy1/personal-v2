@@ -146,6 +146,13 @@ figcaption {
     lost-center: $layout-width;
 }
 
+
+.content {
+    &__inner {
+        padding: 25px 20px;
+    }
+}
+
 @include breakpoint-sm {
     figure.float-left,
     figure.float-right {
@@ -158,5 +165,11 @@ figcaption {
     .float-left {
         float: left;
     }
+    .content {
+
+        &__inner {
+            padding: 30px 20px;
+        }
+    }    
 }
 
