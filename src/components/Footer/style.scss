@@ -1,8 +1,8 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
 
-.sidebar {
-    width: $layout-width;
+.footer {
+    max-width: $layout-width;
     &__author {
         &-photo {
             display: inline-block;
@@ -37,11 +37,15 @@
         text-align: center;
         margin-top: 24px;
     }
+    &__inner {
+        padding: 25px 20px 0;
+    }
 }
 
 @include breakpoint-sm {
-    .sidebar {
+    .footer {
         &__inner {
+            padding: 30px 20px 0;
             &:after {
                 background: $color-gray-border;
                 background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);

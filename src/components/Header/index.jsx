@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import Links from '../Links'
+import './style.scss'
 class Header extends Component {
   render () {
     return (
-      <header style={{marginTop: 56, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-        <h1 style={{marginTop: 'auto', fontSize: 64}}>Austin Lanari</h1>
+      <header className='header' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+        <h1 className='header__title' style={{marginTop: 'auto'}}>Austin Lanari</h1>
         <Links data={author} />
       </header>
     )

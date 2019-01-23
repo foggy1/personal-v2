@@ -1,0 +1,20 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.header {
+    max-width: $layout-width;
+    padding: 25px 20px 0;
+    &__title {
+        font-size: 48px;
+    }
+}
+
+@include breakpoint-sm {
+    .header {
+        padding: 30px 20px 0;
+        margin-top: 24px;
+        &__title {
+            font-size: 64px;
+        }
+    }
+}

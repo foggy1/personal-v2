@@ -9,7 +9,7 @@ class Footer extends React.Component {
       <div style={{display: 'flex', flexDirection: 'row'}}>
           <div
             style={{overflow: 'hidden', minWidth: 100, minHeight: 100, height: 100, width: 100}}
-            className="sidebar__author-photo"
+            className="footer__author-photo"
           >
             <img
               src={profilePic}
@@ -17,24 +17,24 @@ class Footer extends React.Component {
             />
           </div>
           <div style={{flexDirection: 'column', marginLeft: 20}}>
-            <h2 style={{marginTop: 0}} className="sidebar__author-title">
+            <h2 style={{marginTop: 0}} className="footer__author-title">
               About the Author
             </h2>
-            <p className="sidebar__author-subtitle"><em>I am a developer and an advocate of open, accessible solutions. I'm the the lead engineer at <a href='https://vody.com/' target='_blank'>Vody</a> where I help design and implement robust systems to help quiet the waters of streaming media metadata.</em></p>
-            <p style={{marginTop: -5}}className="sidebar__author-subtitle"><em>I also <a href="https://fuckupsomecomics.com" target="_blank">write about comics</a> and consult with small non-profits and labor organizations about their tech needs.</em></p>
-            <p style={{marginTop: -5}}className="sidebar__author-subtitle"><em>If you are in need of an extra pair of eyes on something, <a href="mailto:austin@jumanji.io">let's chat.</a></em></p>
+            <p className="footer__author-subtitle"><em>I am a developer and an advocate of open, accessible solutions. I'm the the lead engineer at <a href='https://vody.com/' target='_blank'>Vody</a> where I help design and implement robust systems to help quiet the waters of streaming media metadata.</em></p>
+            <p style={{marginTop: -5}}className="footer__author-subtitle"><em>I also <a href="https://fuckupsomecomics.com" target="_blank">write about comics</a> and consult with small non-profits and labor organizations about their tech needs.</em></p>
+            <p style={{marginTop: -5}}className="footer__author-subtitle"><em>If you are in need of an extra pair of eyes on something, <a href="mailto:austin@jumanji.io">let's chat.</a></em></p>
           </div>
       </div>
     )
     /* eslint-enable jsx-a11y/img-redundant-alt */
 
     return (
-      <div className="sidebar">
+      <div className="footer">
         <hr style={{marginBottom: 20}}/>
-        <div className="sidebar__inner">
-          <div className="sidebar__author">{authorBlock}</div>
+        <div className="footer__inner">
+          <div className="footer__author">{authorBlock}</div>
           <div>
-            <p className="sidebar__copyright">Copyright © 2019 Austin Lanari. <a href='https://github.com/foggy1/personal-v2' target='_blank'>Source code.</a> Page content is licensed <a href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC BY-SA 4.0</a></p>
+            <p className="footer__copyright">Copyright © 2019 Austin Lanari. <a href='https://github.com/foggy1/personal-v2' target='_blank'>Source code.</a> Page content is licensed <a href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'>CC BY-SA 4.0</a></p>
           </div>
         </div>
       </div>
