@@ -12,9 +12,9 @@ class TagTemplateDetails extends React.Component {
 
     return (
       <div className="content">
+        <HomeButton />
         <div className="content__inner">
           <div className="page">
-            <HomeButton />
             <h1 className="page__title">
               All Posts tagged as &quot;
               {tagTitle}
