@@ -98,13 +98,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     if (node.frontmatter) {
       createNodeField({
         node,
-        name: 'month',
-        value: moment(node.frontmatter.date).format('MMMM')
-      })
-      createNodeField({
-        node,
-        name: 'year',
-        value: moment(node.frontmatter.date).format('YYYY')
+        name: 'year_month',
+        value: moment(node.frontmatter.date).format('YYYY_MMMM')
       })
     }
   if (node.internal.type === 'File') {
