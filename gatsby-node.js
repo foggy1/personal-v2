@@ -1,3 +1,4 @@
+const moment = require('moment')
 const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
@@ -51,7 +52,7 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path: edge.node.fields.slug,
             component: slash(postTemplate),
-            context: { slug: edge.node.fields.slug },
+            context: { slug: edge.node.fields.slug},
           })
 
           let tags = []
@@ -94,6 +95,13 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
+    if (node.frontmatter) {
+      createNodeField({
+        node,
+        name: 'month',
+        value: moment(node.frontmatter.date).format('MMMM')
+      })
+    }
   if (node.internal.type === 'File') {
     const parsedFilePath = path.parse(node.absolutePath)
     const slug = `/${parsedFilePath.dir.split('---')[1]}/`
@@ -112,6 +120,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: 'slug',
       value: slug,
     })
+
 
     if (node.frontmatter.tags) {
       const tagSlugs = node.frontmatter.tags.map(
