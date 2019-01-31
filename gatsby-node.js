@@ -101,6 +101,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         name: 'month',
         value: moment(node.frontmatter.date).format('MMMM')
       })
+      createNodeField({
+        node,
+        name: 'year',
+        value: moment(node.frontmatter.date).format('YYYY')
+      })
     }
   if (node.internal.type === 'File') {
     const parsedFilePath = path.parse(node.absolutePath)
