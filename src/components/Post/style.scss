@@ -10,7 +10,7 @@
         font-size: $typographic-base-font-size * 1.25;
         @include line-height(1.0);
         @include margin-top(0);
-        @include margin-bottom(.5);
+        @include margin-bottom(.1);
         &-link {
             color: $color-base;
             &:hover,
