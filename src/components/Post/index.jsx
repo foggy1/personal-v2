@@ -15,25 +15,29 @@ class Post extends React.Component {
 
     return (
       <div className="post">
-        <div className="post__meta">
-          <time
-            className="post__meta-time"
-            dateTime={moment(date).format('MMMM D, YYYY')}
-          >
-            {moment(date).format('MMMM YYYY')}
-          </time>
-          <span className="post__meta-divider" />
-          <span className="post__meta-category" key={categorySlug}>
-            <Link to={categorySlug} className="post__meta-category-link">
-              {category}
-            </Link>
+
+          <h3 className="post__title">
+          <span className="post__meta">
+            <time
+              className="post__meta-time"
+              dateTime={moment(date).format('MMMM D, YYYY')}
+            >
+              {moment(date).format('DD')}
+            </time>
+            <span className="post__meta-divider" />
           </span>
-        </div>
-        <h3 className="post__title">
-          <Link className="post__title-link" to={slug}>
-            {title}
-          </Link>
-        </h3>
+            <Link className="post__title-link" to={slug}>
+              {title}
+            </Link>
+          </h3>
+            <div className="post__meta">
+            <span className="post__meta-category" key={categorySlug}>
+              <Link to={categorySlug} className="post__meta-category-link">
+                {category}
+              </Link>
+            </span>
+          </div>
+
         <p className="post__description">{description}</p>
       </div>
     )
