@@ -95,11 +95,11 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-    if (node.frontmatter) {
+  if (node.frontmatter) {
       createNodeField({
         node,
-        name: 'year_month',
-        value: moment(node.frontmatter.date).format('YYYY_MMMM')
+        name: 'month_stamp',
+        value: moment(moment(node.frontmatter.date).format('YYYY-MM')).format()
       })
     }
   if (node.internal.type === 'File') {

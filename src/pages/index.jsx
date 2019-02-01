@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import moment from 'moment'
 // import Header from '../components/Header'
 class IndexRoute extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class IndexRoute extends React.Component {
     const groups = this.props.data.allMarkdownRemark.group
     const sections = groups.map(({fieldValue, edges: posts}) => (
       <div>
-        <h3>{fieldValue}</h3>
+        <h2>{moment(fieldValue).format('MMMM YYYY')}</h2>
         {posts.map(post => (
           <Post data={post} key={post.node.fields.slug} />
         ))}
@@ -61,7 +62,7 @@ export const pageQuery = graphql`
       filter: { frontmatter: { layout: { eq: "post" }, draft: { ne: true } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
-      group(field: fields___year_month) {
+      group(field: fields___month_stamp) {
         fieldValue
       edges {
         node {
