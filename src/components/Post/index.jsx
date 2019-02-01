@@ -16,16 +16,18 @@ class Post extends React.Component {
 
     return (
       <div className="post">
-        <div className="post__title-row">
+        <div style={{display: 'flex', flexDirection: 'row'}}className="post__title-row">
+            <span className="post__meta-divider" />
+            <div style={{position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#5d93ff', color: 'white', height: 48, width: 48, borderRadius: 50, paddingTop: 2}}>
+            <i dangerouslySetInnerHTML={{ __html: feather.icons.calendar.toSvg({height: 36, width: 36, color: 'white'}) }} />
+              <span style={{position: 'absolute', bottom: 7, left: 15}}>{moment(date).format('DD')}</span>
+            </div>
             <time
               className="post__meta-time"
               dateTime={moment(date).format('MMMM D, YYYY')}
               style={{position: 'relative'}}
             >
-              <i dangerouslySetInnerHTML={{ __html: feather.icons.calendar.toSvg({height: 36, width: 36, color: 'white', zIndex: 10}) }} />
-              <span style={{position: 'absolute', bottom: 5, left: 12, backgroundColor: '#5d93ff', color: 'white', lineHeight: '40px', width: 40, borderRadius: 50, textAlign: 'center'}}>{moment(date).format('DD')}</span>
             </time>
-            <span classNme="post__meta-divider" />
           <h3 className="post__title">
             <Link className="post__title-link" to={slug}>
               {title}
