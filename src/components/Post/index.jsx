@@ -16,16 +16,16 @@ class Post extends React.Component {
 
     return (
       <li value={moment(date).format('DD')}>
-        <div style={{display: 'flex', flexDirection: 'row'}}className="post">
-            <div className="post__meta">
+        <div className="post">
+          <h3 className="post__title">
+
             <span className="post__meta-category" key={categorySlug}>
               <Link to={categorySlug} className="post__meta-category-link">
                 {category}
               </Link>
             </span>
-          </div>
+
             <span className="post__meta-divider" />
-          <h3 className="post__title">
           <span className="post__meta">
             <time
               className="post__meta-time"
