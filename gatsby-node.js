@@ -99,7 +99,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: 'month_stamp',
-        value: moment(moment(node.frontmatter.date).format('YYYY-MM')).format()
+        value: moment(moment(node.frontmatter.date).format('YYYY-MM-02')).format()
       })
     }
   if (node.internal.type === 'File') {
