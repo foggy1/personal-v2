@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import './style.scss'
+import feather from 'feather-icons'
 
 class Post extends React.Component {
   render() {
@@ -16,6 +17,14 @@ class Post extends React.Component {
     return (
       <li value={moment(date).format('DD')}>
         <div style={{display: 'flex', flexDirection: 'row'}}className="post">
+            <div className="post__meta">
+            <span className="post__meta-category" key={categorySlug}>
+              <Link to={categorySlug} className="post__meta-category-link">
+                {category}
+              </Link>
+            </span>
+          </div>
+            <span className="post__meta-divider" />
           <h3 className="post__title">
           <span className="post__meta">
             <time
@@ -27,14 +36,6 @@ class Post extends React.Component {
               {title}
             </Link>
           </h3>
-            <span className="post__meta-divider" />
-            <div className="post__meta">
-            <span className="post__meta-category" key={categorySlug}>
-              <Link to={categorySlug} className="post__meta-category-link">
-                {category}
-              </Link>
-            </span>
-          </div>
 
 
       </div>
