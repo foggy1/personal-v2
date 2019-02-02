@@ -15,8 +15,7 @@ class Post extends React.Component {
 
     return (
       <li value={moment(date).format('DD')}>
-      <div className="post">
-
+        <div style={{display: 'flex', flexDirection: 'row'}}className="post">
           <h3 className="post__title">
           <span className="post__meta">
             <time
@@ -28,7 +27,7 @@ class Post extends React.Component {
               {title}
             </Link>
           </h3>
-
+            <span className="post__meta-divider" />
             <div className="post__meta">
             <span className="post__meta-category" key={categorySlug}>
               <Link to={categorySlug} className="post__meta-category-link">
@@ -37,7 +36,7 @@ class Post extends React.Component {
             </span>
           </div>
 
-        <p className="post__description">{description}</p>
+
       </div>
       </li>
     )
