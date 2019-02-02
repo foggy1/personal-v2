@@ -30,7 +30,7 @@ class Footer extends React.Component {
 
     return (
       <div className="footer">
-        <hr style={{marginBottom: 20}}/>
+        <hr style={{width: 250, marginTop: 10, marginBottom: 20}}/>
         <div className="footer__inner">
           <div className="footer__author">{authorBlock}</div>
           <div>
