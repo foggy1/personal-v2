@@ -15,6 +15,7 @@ class Post extends React.Component {
     const { slug, categorySlug } = this.props.data.node.fields
 
     return (
+      <li value={moment(date).format('DD')}>
       <div className="post">
         <div style={{display: 'flex', flexDirection: 'row'}}className="post__title-row">
             <span className="post__meta-divider" />
@@ -25,10 +26,8 @@ class Post extends React.Component {
             <time
               className="post__meta-time"
               dateTime={moment(date).format('MMMM D, YYYY')}
-              style={{position: 'relative'}}
-            >
-            </time>
-          <h3 className="post__title">
+            />
+          </span>
             <Link className="post__title-link" to={slug}>
               {title}
             </Link>
@@ -43,6 +42,7 @@ class Post extends React.Component {
         </div>
         <p className="post__description">{description}</p>
       </div>
+      </li>
     )
   }
 }

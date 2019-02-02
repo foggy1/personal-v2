@@ -14,9 +14,11 @@ class IndexRoute extends React.Component {
     const sections = groups.map(({fieldValue, edges: posts}) => (
       <div>
         <h2>{moment(fieldValue).format('MMMM YYYY')}</h2>
-        {posts.map(post => (
-          <Post data={post} key={post.node.fields.slug} />
+        <ol>
+          {posts.map(post => (
+            <Post data={post} key={post.node.fields.slug} />
         ))}
+        </ol>
       </div>
     )).reverse()
 
