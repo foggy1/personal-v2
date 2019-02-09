@@ -12,19 +12,20 @@ class Links extends React.Component {
       vk: author.vk,
       rss: author.rss,
       email: author.email,
+      xmpp: author.xmpp
     }
 
     return (
       <div className="links">
         <ul className="links__list">
           <li className="links__list-item">
-            <a href={`https://www.github.com/${links.github}`} target="_blank">
-              <i dangerouslySetInnerHTML={{ __html: feather.icons.github.toSvg({height: 36, width: 36}) }} />
+            <a href={`mailto:${links.email}`}>
+              <i dangerouslySetInnerHTML={{ __html: feather.icons.mail.toSvg({height: 36, width: 36}) }} />
             </a>
           </li>
           <li className="links__list-item">
-            <a href={`mailto:${links.email}`}>
-              <i dangerouslySetInnerHTML={{ __html: feather.icons.mail.toSvg({height: 36, width: 36}) }} />
+            <a href={`xmpp:${links.xmpp}`}>
+              <i dangerouslySetInnerHTML={{ __html: feather.icons['message-square'].toSvg({height: 36, width: 36}) }} />
             </a>
           </li>
           <li className="links__list-item">
