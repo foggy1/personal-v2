@@ -17,6 +17,7 @@ const author = {
   email: 'austin@jumanji.io',
   github: 'foggy1',
   rss: '/rss.xml',
+  xmpp: 'foggy@jumanji.io'
 }
 
 export default Header
