@@ -20,7 +20,7 @@ class TagTemplateDetails extends React.Component {
               {tagTitle}
               &quot;
             </h1>
-            <div className="page__body">{items}</div>
+            <div style={{paddingLeft: 25}} className="page__body">{items}</div>
           </div>
         </div>
       </div>
