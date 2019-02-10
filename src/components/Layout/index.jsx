@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../Header'
 import Footer from '../Footer'
+require("typeface-roboto")
 import '../../assets/scss/init.scss'
 
 class Layout extends React.Component {
