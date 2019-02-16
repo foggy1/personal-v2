@@ -149,6 +149,9 @@ figcaption {
 
 
 .content {
+    &__top {
+        padding: 25x 20px;
+    }
     &__inner {
         padding: 25px 20px;
     }
@@ -167,11 +170,15 @@ figcaption {
         float: left;
     }
     .content {
-
+        &__top {
+            padding: 30px 20px;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
         &__inner {
             padding: 30px 20px;
         }
-    }    
+    }
 }
 
 
