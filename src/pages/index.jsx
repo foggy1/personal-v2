@@ -15,7 +15,7 @@ class IndexRoute extends React.Component {
     const image = this.props.data.imageSharp.fluid
     const sections = groups.map(({fieldValue, edges: posts}) => (
       <div>
-        <h2>{moment(fieldValue).format('MMMM YYYY')}</h2>
+        <h2 className="content__inner__date">{moment(fieldValue).format('MMMM YYYY')}</h2>
         <ol>
           {posts.map(post => (
             <Post data={post} key={post.node.fields.slug} />
