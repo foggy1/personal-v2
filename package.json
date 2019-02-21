@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write './*.js' 'src/**/*.js' 'src/**/*.jsx'",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "datify": "gatsby build && cp -r .dat/ public/ && dat share public"
+    "datify": "gatsby build && cp -r .dat/ public/ && cp dat.json public/ && dat share public"
   },
   "repository": "git+https://github.com/alxshelepenok/gatsby-starter-lumen.git",
   "keywords": [
