@@ -12,7 +12,7 @@ tags:
 description: "Even with serverless deployment, sites like mine have one source of truth; dat spreads out that responsibility."
 ---
 
-[Dat is cool](https://datproject.org/). Here's a clip from their docs:
+[Dat is cool](https://datproject.org/). If you download [Beaker Browser](https://beakerbrowser.com/) you can visit my site on the peer-to-peer web at [this dat:// link](dat://615f743b4ccaf6dc53a68dea17891ca602d2f0afa04758d93f3b61060596a758/). For a little about Dat, here's a clip from their docs:
 
 > Cloud services, such as Dropbox or GitHub, force users to store data on places outside of their control. Until now, it has been very difficult to avoid centralized servers without major sacrifices. Dat's unique distributed network allows users to store data where they want. By decentralizing storage, Dat also increases speeds by downloading from many sources at the same time.
 
