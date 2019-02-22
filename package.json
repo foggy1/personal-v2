@@ -6,13 +6,13 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "clean:public": "rm -rf public",
+    "clean:public": "rm -rf public .cache",
     "clean": "npm run clean:public",
     "lint": "./node_modules/.bin/eslint --cache --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write './*.js' 'src/**/*.js' 'src/**/*.jsx'",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "datify": "npm run clean && gatsby build && cp -r .dat/ public/ && cp dat.json public/ && dat share public",
+    "datify": "npm run clean && gatsby build && cp -r public/ .dat_build && cp -r .dat/ .dat_build/.dat/ && dat .dat_build",
     "datBackup": "cp -r public/.dat . && cp public/dat.json ."
   },
   "repository": "git+https://github.com/alxshelepenok/gatsby-starter-lumen.git",
