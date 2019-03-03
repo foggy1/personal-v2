@@ -192,7 +192,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: '2',
+        siteId: '1',
         matomoUrl: process.env.MATOMO_URL,
         siteUrl: 'https://austinlanari.com'
       }
